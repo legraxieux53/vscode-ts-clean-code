@@ -111,7 +111,7 @@ function createNewInstance(textProperties: string): string {
     propName: string;
     propType: string;
   }) => {
-    return `result.set${classify(property.propName)}(data && data.${
+    return `this.set${classify(property.propName)}(data && data.${
       property.propName
     });
 			  `;
@@ -119,8 +119,7 @@ function createNewInstance(textProperties: string): string {
 
   let result = `
   
-		static newInstance(data?: any) {
-		  const result = new this();
+		constructor(data?: any) {
 	  `;
   properties.map((prop) => (result += constructProperty(prop)));
 
