@@ -5,7 +5,7 @@
   "version": "0.0.1",
   "publisher": "legracieux53",
   "repository": {
-    "url": ""
+    "url": "https://github.com/legraxieux53/vscode-ts-clean-code.git"
   },
   "engines": {
     "vscode": "^1.58.0"
