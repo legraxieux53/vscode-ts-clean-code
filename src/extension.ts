@@ -124,7 +124,6 @@ function createNewInstance(textProperties: string): string {
   properties.map((prop) => (result += constructProperty(prop)));
 
   result += `
-		  return result;
 	  }
 	  
 	  `;
